@@ -1,5 +1,5 @@
-import React, { useEffect, useReducer } from 'react'
-import { todoReducer } from '../08-useReducer/todoReducer';
+import React, { useEffect, useReducer } from 'react';
+import { todoReducer } from './todoReducer';
 
 const init = () => {
     return JSON.parse(localStorage.getItem('todos')) || [];//esto es para que cuando se recargue la pagina, los todos no se borren, sino que se mantengan en el estado
